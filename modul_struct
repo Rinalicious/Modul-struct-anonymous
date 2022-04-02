@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+type mahasiswa struct {
+	nama string
+	umur int
+}
+
+func main() {
+	var s1 = struct {
+		mahasiswa
+		semester int
+	}{}
+	s1.mahasiswa = mahasiswa{"Arinal Haq", 26}
+	s1.semester = 1
+
+	fmt.Println("Nama     :", s1.mahasiswa.nama)
+	fmt.Println("Umur     :", s1.mahasiswa.umur)
+	fmt.Println("Semester :", s1.semester)
+}
