@@ -7,7 +7,7 @@ type mahasiswa struct {
 	umur int
 }
 
-func data_pertama() {
+func newData() {
 	var s1 = struct {
 		mahasiswa
 		semester int
