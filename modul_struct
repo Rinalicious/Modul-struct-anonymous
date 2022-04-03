@@ -1,4 +1,4 @@
-package new_modul
+package main
 
 import "fmt"
 
@@ -7,7 +7,7 @@ type mahasiswa struct {
 	umur int
 }
 
-func newData() {
+func main() {
 	var s1 = struct {
 		mahasiswa
 		semester int
